@@ -4,18 +4,20 @@ import './App.css';
 
 
 
-import cat1 from './images/cat1.jpg';
-import dog1 from './images/dog1.jpg';
-import cat2 from './images/cat2.jpg';
-import dog2 from './images/dog2.jpg';
-import cat3 from './images/cat3.jpg';
-import dog3 from './images/dog3.png';
+import cat1 from './assets/images/cat1.jpg';
+import dog1 from './assets/images/dog1.jpg';
+import cat2 from './assets/images/cat2.jpg';
+import dog2 from './assets/images/dog2.jpg';
+import cat3 from './assets/images/cat3.jpg';
+import dog3 from './assets/images/dog3.png';
 
 const AnimalImages = [cat1, dog1, cat2, dog2, cat3, dog3];
+
 
 function App() {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,6 +26,7 @@ function App() {
 
     return () => clearInterval(interval);
   }, []);
+
 
   return (
     <div className="App">
@@ -38,7 +41,7 @@ function App() {
                 style={{
                   opacity: index === currentImageIndex ? 1 : 0,
                   position: index === currentImageIndex ? 'relative' : 'absolute',
-                  zIndex: index === currentImageIndex ? 1 : 0,
+                  Index: index === currentImageIndex ? 1 : 0,
                   transition: 'opacity 1s ease-in-out',
                 }}
               />

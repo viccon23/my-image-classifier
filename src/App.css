@@ -33,7 +33,7 @@
   display: flex;
   overflow: hidden;
   animation: imageSlideshow 18s linear infinite; /* Adjust the duration based on the number of images */
-  border-radius: 15%;
+  border-radius: 17%;
   border: solid rgb(61, 60, 60) 10px;
   margin-right: 10px;
 }
@@ -56,7 +56,7 @@
 
 .drop-container {
   margin-left: 10px;
-  border: 2px dashed #aaa;
+  border: 10px dashed #aaa;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,5 +67,6 @@
 
 .drop-container p {
   text-align: center;
-  color: #888;
+  color: #000000;
+  font-size:80px;
 }
