@@ -84,8 +84,8 @@ const ImageUploader = () => {
                 height: det.bbox[3],
                 borderRadius: '3px',
                 position: 'absolute',
-                border: '2px solid red',
-                fontSize: '12px',
+                border: '5px solid red',
+                fontSize: '20px',
                 color: 'red',
                 fontWeight: 'bold',
               }}
