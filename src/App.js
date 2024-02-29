@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="title">Cat or Dog?</div>
+      <div className="title">Cat or Dog? Or something else I haven't fixed this</div>
       <div className="container">
         <div className="image-container">
         {AnimalImages.map((image, index) => (
@@ -55,7 +55,7 @@ function App() {
         <h1> So, what's the point of this site? </h1>
         Drag an image, any image, and a trained Machine Learning model will interpret the photo and declare if a cat or dog is present in the image. If not, then depending on it's confidence, it will output a message saying that no such animals are present. 
         <br></br>
-        A bit of a fair warning however, it will not be able to distinguish both animals in one photo. In such case, it will either choose one or display a low confidence.
+        The ML model cat detect up to 80 objects, so I haven't tweaked it to register only cats or dogs * yet *. Or maybe i'll keep it like this....
       </div>
     </div>
   );
