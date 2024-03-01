@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="title">Cat or Dog? Or something else I haven't fixed this</div>
+      <div className="title">Image Classifier</div>
       <div className="container">
         <div className="image-container">
         {AnimalImages.map((image, index) => (
@@ -53,7 +53,7 @@ function App() {
       </div>
       <div className="instructions">
         <h1> So, what's the point of this site? </h1>
-        Drag an image, any image, and a trained Machine Learning model will interpret the photo and declare if a cat or dog is present in the image. If not, then depending on it's confidence, it will output a message saying that no such animals are present. 
+        Drag an image, any image, and a trained Machine Learning model will interpret the photo and detect an object. Currently detects all objects, but want to tweak it to Cats and Dogs.
         <br></br>
         The ML model cat detect up to 80 objects, so I haven't tweaked it to register only cats or dogs * yet *. Or maybe i'll keep it like this....
       </div>
